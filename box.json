@@ -1,0 +1,38 @@
+{
+    "name":"BABInstragramFeed",
+    "version":"0.0.0",
+    "author":"",
+    "location":"gpickin/BABInstragramFeed#v0.0.0",
+    "homepage":"https://github.com/gpickin/BABInstragramFeed",
+    "documentation":"https://github.com/gpickin/BABInstragramFeed",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/gpickin/BABInstragramFeed"
+    },
+    "bugs":"https://github.com/gpickin/BABInstragramFeed/issues",
+    "slug":"BABInstragramFeed",
+    "shortDescription":"ContentBox 3 Module for displaying your Instagram Feed",
+    "description":"ContentBox 3 Module for displaying your Instagram Feed",
+    "type":"modules",
+    "dependencies":{
+        
+    },
+    "devDependencies":{
+        "coldbox":"^4.3.0+188",
+        "testbox":"^2.4.0+80"
+    },
+    "installPaths":{
+        "testbox":"testbox",
+        "coldbox":"tests\\resources\\app\\coldbox"
+    },
+    "scripts":{
+        "postVersion":"package set location='gpickin/BABInstragramFeed#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push && !git push --tags"
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ]
+}
